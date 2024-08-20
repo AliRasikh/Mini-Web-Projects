@@ -1,0 +1,49 @@
+body {
+  background-color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 5px 10px 40px 10px;
+  text-align: center;
+  width: 30%;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container h1 {
+  /* background-color: aqua; */
+  color: rgb(89, 159, 186);
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container button {
+  color: white;
+  background-color: rgb(209, 19, 19);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.container input {
+  padding: 10px 10px;
+  border-radius: 4px;
+}
+
+#temperature {
+}

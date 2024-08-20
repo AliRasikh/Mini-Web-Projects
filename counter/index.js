@@ -1,10 +1,21 @@
-let username;
-document.getElementById("submit").onclick = function () {
-  username = document.getElementById("username").value;
-  if (Boolean(username)) {
-    document.getElementById("myH1").textContent = `Welcome ${username}`;
-    console.log(username);
-  } else {
-    window.alert("name can not be empty!");
-  }
+const decreaseBtn = document.getElementById("decrease");
+const increaseBtn = document.getElementById("increase");
+const resetBtn = document.getElementById("reset");
+const countLabel = document.getElementById("count");
+let count = 0;
+
+decreaseBtn.onclick = function () {
+  console.log(count);
+  count--;
+  countLabel.textContent = count;
+};
+
+increaseBtn.onclick = function () {
+  count++;
+  countLabel.textContent = count;
+};
+
+resetBtn.onclick = function () {
+  count = 0;
+  countLabel.textContent = count;
 };
