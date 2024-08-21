@@ -5,30 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6d808bd5ec.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="header">
-      <!-- <div > -->
       <a href="index.html"
         ><img src="images/logo2.png" alt="Logo" height="60px"
       /></a>
-      <!-- </div> -->
+
       <h1>My Website</h1>
       <p>Resize the browser to see the responsiveness effect</p>
     </div>
-    <div class="topnav">
-      <a href="#">Link</a>
-      <a href="#">Link</a>
-      <a href="#">Link</a>
-      <button class="dropbtn" onclick="showDropdown()">==</button>
+    <div id="desktop-menu">
+      <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <button class="dropbtn" onclick="toggleDropdown()">
+          <i class="fa-solid fa-bars"></i> Menu
+        </button>
+      </div>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
     </div>
-    <!-- <div class="dropdown"> -->
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+
+    <div id="phone-menu">
+      <div class="phone-topnav">
+        <a id="nav-img-anchor" href="index.html"
+          ><img src="images/logo2.png" alt="Logo" height="60px"
+        /></a>
+        <h1>My Website</h1>
+        <button class="phone-dropbtn" onclick="toggleDropdown()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div class="phone-dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
     </div>
-    <!-- </div> -->
 
     <div class="row">
       <div class="left-colm">

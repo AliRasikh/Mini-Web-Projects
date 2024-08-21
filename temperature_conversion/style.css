@@ -26,6 +26,28 @@ body {
   padding-bottom: 30px;
 }
 
+.container input[type="number"] {
+  padding: 10px 0 10px 10px;
+  border-radius: 4px;
+  margin: 20px 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.container input[type="number"]::-webkit-inner-spin-button {
+  padding: 7px;
+  height: 30px;
+}
+
+.container input[type="number"]::placeholder {
+  font-size: small;
+  font-weight: normal;
+}
+.container input[type="radio"] {
+  font-size: 1.2em;
+  margin: 7px;
+}
+
 .container button {
   color: white;
   background-color: rgb(209, 19, 19);
@@ -33,6 +55,7 @@ body {
   border: none;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
 }
 
 .container button:hover {
@@ -40,10 +63,14 @@ body {
   cursor: pointer;
 }
 
-.container input {
-  padding: 10px 10px;
-  border-radius: 4px;
+.container button:active {
+  background-color: rgb(209, 19, 19);
+  border: none;
 }
 
-#temperature {
+#result {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
 }

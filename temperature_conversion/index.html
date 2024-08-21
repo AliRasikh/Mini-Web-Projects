@@ -13,11 +13,25 @@
   <body>
     <div class="container">
       <h1>Temperature Conversion</h1>
-      <input type="number" id="temperature" />
-      <input type="radio" name="c_t" />
-      <h2>Celsius <i class="fa-solid fa-arrow-right"></i> Fahrenheit</h2>
-      <h2>Fahrenheit <i class="fa-solid fa-arrow-right"></i> Celsius</h2>
-      <button type="submit">Submit</button>
+      <input
+        type="number"
+        id="temperature"
+        placeholder="Enter the amount here"
+      />
+      <br />
+      <input type="radio" id="c-f" name="conversion-type" />
+      <label for="c-f">
+        Celsius <i class="fa-solid fa-arrow-right"></i> Fahrenheit</label
+      ><br />
+      <input type="radio" id="f-c" name="conversion-type" />
+      <label for="f-c"
+        >Fahrenheit <i class="fa-solid fa-arrow-right"></i> Celsius</label
+      >
+      <br />
+      <button type="submit" id="convertbtn">Convert</button>
+      <!-- <hr /> -->
+      <p id="result"></p>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -32,7 +32,7 @@ body {
 .topnav {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   /* height: 50px; */
   background-color: rgb(29, 42, 53);
   overflow: hidden;
@@ -72,24 +72,29 @@ body {
   cursor: pointer;
 }
 
-.dropdown-content {
-  /* display: block;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1; */
-
+/* .dropdown-content {
   display: none;
   position: absolute;
   right: 20px;
-  /* float: right; */
   width: 20%;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  /* border-radius: 5px; */
+  
+} */
+
+.dropdown-content {
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  top: 22em;
+  right: 20px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  width: 60%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .dropdown-content a {
@@ -101,18 +106,69 @@ body {
   text-align: center;
   border: 1px solid #ddd;
 }
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+#phone-menu {
+  display: none;
+}
 
 /* make the nav responsive */
 @media screen and (max-width: 600px) {
-  .topnav a {
+  /* .topnav a {
+    display: block;
     float: none;
     width: 100%;
     padding: 10px;
     border: 1px solid white;
-  }
-  /* .header {
-    display: none;
   } */
+
+  #desktop-menu {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  body {
+    padding-top: 50px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  #phone-menu {
+    display: block;
+  }
+
+  .phone-topnav {
+    padding: 10px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: 0;
+    border-radius: 0;
+  }
+  .phone-topnav img {
+    height: 40px;
+  }
+
+  .phone-topnav h1 {
+    display: inline;
+    font-size: 1.2em;
+    position: relative;
+    top: -10px;
+  }
+
+  .phone-topnav button {
+    float: right;
+    padding: 10px;
+  }
+
+  .phone-dropdown-content {
+    display: none;
+  }
 }
 
 .left-colm {
