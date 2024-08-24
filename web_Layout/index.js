@@ -1,3 +1,4 @@
+// *** desktop dropdown menu
 const dropdownContent = document.getElementsByClassName("dropdown-content")[0];
 const dropbtn = document.getElementsByClassName("dropbtn")[0];
 
@@ -18,8 +19,31 @@ function toggleDropdown() {
   }
 }
 
-// const dropbtn = document.getElementById("dropbtn");
+// *** phone side menu
+const phoneSideMenu = document.getElementById("phone-side-menu");
+let selectAll = document.getElementsByClassName("select-all")[0];
 
-// dropbtn.addEventListener("click", function () {
-//   dropdownContent.style.display = "block";
-// });
+function toggleSideMenu() {
+  console.log("toggleSideMenu");
+  phoneSideMenu.style.cssText = `
+    width: 30%;
+    transition: width 0.2s;
+    `;
+
+  document.body.style.height = "100%";
+  document.body.style.overflow = "hidden";
+  selectAll.style.opacity = "0.5";
+}
+
+selectAll.onclick = function () {
+  console.log("selectAll.onclick");
+  phoneSideMenu.style.width = 0;
+  phoneSideMenu.style.cssText = `
+    width: 0;
+    transition: width 0.2s;
+    `;
+
+  document.body.style.height = "auto";
+  document.body.style.overflow = "auto";
+  selectAll.style.opacity = "1";
+};

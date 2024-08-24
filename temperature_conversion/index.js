@@ -10,11 +10,10 @@ convertbtn.addEventListener("click", function () {
     result.innerHTML = "Please enter a temperature value";
   } else if (c_f.checked) {
     let f = temp.value * 1.8 + 32;
-    console.log(f);
-    result.innerHTML = f + " F";
+    result.innerHTML = f.toFixed(1) + " F";
   } else if (f_c.checked) {
     let c = (temp.value - 32) / 1.8;
-    result.innerHTML = c + " C";
+    result.innerHTML = c.toFixed(1) + " C";
   } else {
     result.innerHTML = "Please select a conversion type";
   }
