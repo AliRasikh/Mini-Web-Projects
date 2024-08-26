@@ -6,7 +6,7 @@ function toggleDropdown() {
   if (dropdownContent.style.height == 0) {
     dropdownContent.style.cssText = `
   opacity: 1;
-  height: 20%;
+  height: 200px;
   transition: height 0.2s;
   `;
     dropbtn.innerHTML = '<i class="fa-solid fa-xmark"></i>' + " Menu";
@@ -14,6 +14,7 @@ function toggleDropdown() {
     dropdownContent.style.cssText = `
   height = 0;
   opacity: 0;
+  transition: height 0.2s;
   `;
     dropbtn.innerHTML = '<i class="fa-solid fa-bars"></i>' + " Menu";
   }
