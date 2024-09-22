@@ -5,6 +5,15 @@ body{
     padding: 0;
 }
 
+.enabled{
+    background-color: aqua;
+}
+
+.disabled{
+    background-color:hsl(0, 23%, 22%);
+    cursor: not-allowed;
+}
+
 * {
     box-sizing: border-box;
 }

@@ -2,7 +2,7 @@ const display = document.getElementById('display');
 display.innerHTML = '';
 
 function appendToDisplay(input) {
-    console.log(`append to display ${input}`);
+    // console.log(`append to display ${input}`);
     display.innerHTML += input;
 }
 
@@ -26,8 +26,33 @@ function calculate() {
 }
 
 backspace = () => {
-    console.log("backspace");
     display.innerHTML = display.innerHTML.slice(0, -1);     
 }
+
+
+
+function add() { 
+    // window.alert("add");
+    // console.log("add");
+    
+    const para = document.createElement("p");	
+    console.log(para);
+    const node = document.createTextNode("This is new.");
+    para.appendChild(node);
+
+    para.style.cssText = `
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: yellow;
+    `;
+
+    const placeholder = document.getElementById("placeholder"); 
+    placeholder.appendChild(para);
+       
+}
+
+
+
 
 
