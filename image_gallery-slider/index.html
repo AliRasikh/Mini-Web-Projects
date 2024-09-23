@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="prev"><</button>
-    <div class="container">
-        <img id="image" src="images/car1.jpg">
+    <div class="slider">
+        <div class="slides">
+            <img src="images/car1.jpg" alt="image #1">
+            <img src="images/car2.jpg" alt="image #2">
+            <img src="images/car3.jpg" alt="image #3">
+        </div>
+        <button id="prev" onclick="prev()">&#10094</button>
+        <button id="next" onclick="next()">&#10095</button>
     </div>
-    <button id="next">></button>
     <script src="index.js"></script>
 </body>
 </html>

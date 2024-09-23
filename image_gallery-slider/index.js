@@ -1,20 +1,26 @@
-const next = document.getElementById('next');
-const prev = document.getElementById('prev');
-const image = document.getElementById('image');
+const slides = document.querySelectorAll(".slider img");
 
-count = 2;
-maxCount = 3; 
+count = 0;
+maxCount = slides.length - 1;
+let intervalId = null;
 
-next.addEventListener('click', () => {
-    image.src = `images/car${count}.jpg`;
-    count === maxCount? count = 1 : count++;
-    console.log(count);
-    console.log(image);
-});
-  
-prev.addEventListener('click', () => {
-    image.src = `images/car${count}.jpg`;
-    count === 1? count = maxCount : count--;
-    console.log(count);
-    console.log(image);
-});
+document.addEventListener("DOMContentLoaded", startSlideShow);
+function startSlideShow() {
+  if (slides.length > 0) {
+    slides[count].classList.add("slideRight");
+    intervalId = setInterval(next, 3000);
+  }
+}
+
+function next() {
+  count === maxCount ? (count = 0) : count++;
+  slides.forEach((slide) => slide.classList.remove("slideRight", "slideLeft"));
+  slides[count].classList.add("slideRight");
+}
+
+function prev() {
+  clearInterval(intervalId);
+  count === 0 ? (count = maxCount) : count--;
+  slides.forEach((slide) => slide.classList.remove("slideRight", "slideLeft"));
+  slides[count].classList.add("slideLeft");
+}
