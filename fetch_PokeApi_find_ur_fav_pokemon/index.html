@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Find your favorite pokemon</title>
 </head>
 <body>
-    <input type="text" id="pokemon--name">
-    <button id="fetch--btn">fetch Pokemon</button>
-    <div class="pokemon">
-        <img src="" alt="">
-        <h2 id="test">ii</h2>
+    <div id="container">
+        <input type="text" id="pokemon--name" placeholder="Pokemon name">
+        <button id="fetch--btn">fetch Pokemon</button>
+        <!-- <p>*try ditto, bulbasaur, charmander or any which you know of </p> -->
+        <div id="pokemon--img--container">
+        </div>
+        <div id="pokemon--data--container">
+        </div>
+        <p id="hint">*Hint: Enter a Pokémon name to fetch its data, try ditto, bulbasaur, charmander or any which you like.</p>
     </div>
-  <script src="index.js"></script>  
+        <script src="index.js"></script>  
 </body>
 </html>
