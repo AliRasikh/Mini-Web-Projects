@@ -37,12 +37,12 @@ h1 {
 button {
   background-color: #007bff;
   color: #fff;
-  padding: 20px 40px;
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin: 20px 10px;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 #start {
