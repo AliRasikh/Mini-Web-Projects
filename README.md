@@ -17,7 +17,7 @@
 ## 5. Image gallery slider
 <img src="./demo/demo_slider.gif" alt="demo" width="540" height="380">
 
-## 6. Calculater
+## 6. Calculator
 <img src="./demo/demo_calculator.gif" alt="demo" width="450" height="380">
 
 ## 7. Stopwatch
